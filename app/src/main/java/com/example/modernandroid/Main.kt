@@ -38,16 +38,60 @@ package com.example.modernandroid
 //}
 
 // Unit, 배열, 리스트
-fun main() {
-    // 코틀린은 자바의 에러를 최대한 줄이기 위해 만든 언어. 에러를 줄이기 위해선 변수를 최대한 줄인다.
-    //  val items =  arrayOf(1, 2, 3, 4, 5) // 배열, arrayOf는 잘 쓰지 않는다
-    var items = listOf(1, 2, 3, 4, 5) // 리스트는 한번 생성되면 불변임.
-    // 불변x 변경o
-    var items2 = arrayListOf(1, 2, 3, 4, 5)
+//fun main() {
+//    // 코틀린은 자바의 에러를 최대한 줄이기 위해 만든 언어. 에러를 줄이기 위해선 변수를 최대한 줄인다.
+//    //  val items =  arrayOf(1, 2, 3, 4, 5) // 배열, arrayOf는 잘 쓰지 않는다
+//    var items = listOf(1, 2, 3, 4, 5) // 리스트는 한번 생성되면 불변임.
+//    // 불변x 변경o
+//    var items2 = arrayListOf(1, 2, 3, 4, 5)
+//
+//    items2.add(6)
+//    items2.remove(1)
+//
+//    items2[0] = 10 // 인덱스 참조해서 값을 할당
+//    print(items2)
+//}
 
-    items2.add(6)
-    items2.remove(1)
+// if, for, when
+//fun main() {
+//    val x = 2
+//    if (x % 2 == 0) {
+//        println("짝수")
+//    }
+//
+//    val isEven = if (x % 2 == 0) "짝" else "홀" // 이런식의 문법도 가능 if문이라 안하고 if식이라 하지만 말이 이상해서 if문이라 부름
+//
+//    val numbers = listOf(1, 2, 3, 4, 5)
+//
+//    for (i in numbers) {
+//        println(i)
+//    }
+//
+//    for (i in 0..9) {
+//        println(i)
+//    }
+//}
 
-    items2[0] = 10 // 인덱스 참조해서 값을 할당
-    print(items2)
-}
+//fun main() {
+//    var x = 1
+//
+//    // when도 다 식이다.
+//    when (x) {
+//        1 -> print("1입니다.")
+//        2 -> print("2입니다.")
+//        3, 4, 5 -> print("3이나 4 5입니다.")
+//        in 6..20 -> print("6부터 20 사이의 값입니다.")
+//        !in 8..10 -> print("")
+//        else -> print("else")
+//    }
+//
+//    // 이런식으로도 표현 가능
+////    val y = when (x) {
+////        1 -> print("1입니다.")
+////        2 -> print("2입니다.")
+////        3, 4, 5 -> print("3이나 4 5입니다.")
+////        in 6..20 -> print("6부터 20 사이의 값입니다.")
+////        !in 8..10 -> print("")
+////        else -> print("else")
+////    }
+//}
